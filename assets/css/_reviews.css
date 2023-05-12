@@ -15,7 +15,6 @@
 .review blockquote::before {
     content: '\0022';
     left: 0;
-
 }
 
 .review blockquote::after {
