@@ -1,11 +1,11 @@
 @import './reset.css';
-@import './_header.css';
-@import './_avatar.css';
-@import './_icons.css';
-@import './_columns.css';
-@import './_labels.css';
-@import './_reviews.css';
-@import './_footer.css';
+@import './header.css';
+@import './avatar.css';
+@import './icons.css';
+@import './columns.css';
+@import './labels.css';
+@import './reviews.css';
+@import './footer.css';
 
 :root {
     /* --color-emerald: #004D40; */
