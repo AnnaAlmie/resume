@@ -1,0 +1,27 @@
+.label {
+    position: relative;
+    color: var(--color-grass);
+    margin: 1.4rem 0 0.6rem;
+    padding: 0 2.5rem;
+    width: fit-content;
+    max-width: calc(100% - 2.5rem);
+}
+
+.label::before,
+.label::after {
+    position: absolute;
+    color: inherit;
+
+}
+
+.label::before {
+    content: '<!-- ';
+    left: 0;
+    top: 0;
+}
+
+.label::after {
+    content: ' -->';
+    right: 0;
+    bottom: 0;
+}

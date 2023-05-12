@@ -4,554 +4,659 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon  -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23004d40%22></rect><path fill=%22%23ffffff%22 d=%22M30.87 49.86L30.87 49.86Q30.87 47.26 30.15 45.37Q29.43 43.47 28.16 42.25Q26.89 41.02 25.14 40.42Q23.38 39.82 21.32 39.82L21.32 39.82Q20.22 39.82 19.33 39.90Q18.44 39.97 17.62 40.06L17.62 40.06L17.62 59.79Q18.44 59.98 19.47 60.06Q20.50 60.13 21.51 60.13L21.51 60.13Q25.98 60.13 28.42 57.54Q30.87 54.94 30.87 49.86ZM37.26 49.81L37.26 49.81Q37.26 53.70 36.13 56.60Q35.00 59.50 32.94 61.40Q30.87 63.30 27.97 64.26Q25.06 65.22 21.51 65.22L21.51 65.22Q20.70 65.22 19.74 65.19Q18.78 65.17 17.74 65.05Q16.71 64.93 15.68 64.74Q14.65 64.54 13.74 64.21L13.74 64.21Q11.43 63.34 11.43 61.33L11.43 61.33L11.43 37.81Q11.43 36.94 11.91 36.46Q12.39 35.98 13.26 35.70L13.26 35.70Q15.03 35.07 17.12 34.90Q19.21 34.74 21.08 34.74L21.08 34.74Q24.68 34.74 27.68 35.67Q30.68 36.61 32.79 38.48Q34.90 40.35 36.08 43.18Q37.26 46.02 37.26 49.81ZM60.68 53.98L47.34 55.90Q48.01 58.35 49.83 59.46Q51.66 60.56 54.34 60.56L54.34 60.56Q56.36 60.56 58.06 59.96Q59.77 59.36 60.82 58.69L60.82 58.69Q61.50 59.07 61.93 59.74Q62.36 60.42 62.36 61.18L62.36 61.18Q62.36 62.14 61.71 62.89Q61.06 63.63 59.94 64.16Q58.81 64.69 57.27 64.98Q55.74 65.26 53.96 65.26L53.96 65.26Q51.13 65.26 48.80 64.50Q46.47 63.73 44.82 62.17Q43.16 60.61 42.22 58.30Q41.29 56 41.29 52.93L41.29 52.93Q41.29 49.95 42.20 47.74Q43.11 45.54 44.67 44.05Q46.23 42.56 48.30 41.84Q50.36 41.12 52.66 41.12L52.66 41.12Q55.02 41.12 56.98 41.86Q58.95 42.61 60.34 43.93Q61.74 45.25 62.53 47.10Q63.32 48.94 63.32 51.10L63.32 51.10Q63.32 52.45 62.62 53.12Q61.93 53.79 60.68 53.98L60.68 53.98ZM52.66 45.68L52.66 45.68Q50.31 45.68 48.73 47.24Q47.14 48.80 46.95 51.68L46.95 51.68L57.61 50.10Q57.42 48.32 56.22 47Q55.02 45.68 52.66 45.68ZM85.64 41.31L85.64 41.31Q86.89 41.31 87.73 41.89Q88.57 42.46 88.57 43.81L88.57 43.81Q88.57 44.43 88.21 45.82Q87.85 47.22 87.25 49.04Q86.65 50.86 85.88 52.98Q85.11 55.09 84.30 57.13Q83.48 59.17 82.66 60.99Q81.85 62.82 81.18 64.06L81.18 64.06Q80.70 64.45 79.74 64.69Q78.78 64.93 77.62 64.93L77.62 64.93Q76.23 64.93 75.25 64.57Q74.26 64.21 73.83 63.39L73.83 63.39Q73.40 62.58 72.78 61.14Q72.15 59.70 71.43 57.87Q70.71 56.05 69.94 54.01Q69.18 51.97 68.48 49.95Q67.78 47.94 67.18 46.06Q66.58 44.19 66.20 42.70L66.20 42.70Q66.68 42.13 67.57 41.72Q68.46 41.31 69.42 41.31L69.42 41.31Q70.66 41.31 71.46 41.89Q72.25 42.46 72.68 43.95L72.68 43.95L75.08 51.87Q75.37 52.83 75.73 53.91Q76.09 54.99 76.42 56.02Q76.76 57.06 77.07 57.99Q77.38 58.93 77.58 59.55L77.58 59.55L77.77 59.55Q79.16 55.33 80.50 50.84Q81.85 46.35 82.86 41.98L82.86 41.98Q83.43 41.65 84.18 41.48Q84.92 41.31 85.64 41.31Z%22></path></svg>" />
     <!-- favicon end -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" /><!-- css -->
     <title>FrontEnd | Lytvynenko Anna</title>
-    <style>
-        :root {
-            --color-contrast: #004D40;
-            --color-contrast-hover: #E65100;
-            --color-blue: rgb(0, 87, 183);
-            --color-yellow: rgb(255, 215, 0);
-            --border-radius: 5px;
-        }
-
-        /* main styles */
-        body {
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-            font-family: monospace, sans-serif;
-            font-size: 14px;
-            line-height: 1.25;
-            color: #484848;
-        }
-
-        a {
-            color: var(--color-contrast);
-            transition: all .2s ease-in-out;
-        }
-
-        a:hover {
-            color: var(--color-contrast-hover);
-        }
-
-        .label {
-            border-bottom: 1px solid;
-        }
-
-        .btns span {
-            display: inline-block;
-            padding: 4px;
-            margin: 4px 2px;
-            background-color: rgba(255, 255, 255, .15);
-            border-radius: var(--border-radius);
-            white-space: nowrap;
-        }
-
-        ul {
-            margin-top: -10px;
-            padding-left: 15px;
-            list-style-type: circle;
-        }
-
-        details {
-            border: 1px solid var(--color-contrast);
-            border-radius: var(--border-radius);
-            padding: 10px;
-            margin: 20px 0;
-        }
-
-        details[open] summary {
-            padding-bottom: 10px;
-        }
-
-        summary {
-            cursor: pointer;
-        }
-
-        .column {
-            padding: 10px;
-        }
-
-        .social__wrap>a {
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        /* flip  */
-        .flip-card {
-            width: 100vw;
-            height: 100vw;
-            max-width: 300px;
-            max-height: 300px;
-            perspective: 1000px;
-            margin: 0 auto;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-        }
-
-        .flip-card:hover .flip-card-inner,
-        .flip-card:focus .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-
-        .flip-card-front {
-            z-index: 2;
-        }
-
-        .flip-card-back {
-            transform: rotateY(180deg);
-            z-index: 1;
-        }
-
-        .flip-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .color-grey {
-            color: #a3a3a3;
-        }
-
-        /* mobile first */
-        @media (min-width: 820px) {
-            .column__wrap {
-                max-width: 1000px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: stretch;
-            }
-
-            .column:first-child {
-                width: 40%;
-            }
-
-            .column:last-child {
-                width: 60%;
-            }
-        }
-
-        /* on-screen styles */
-        @media screen {
-            .column {
-                position: relative;
-            }
-
-            .column:first-child {
-                color: #fff;
-                line-height: 1.8;
-            }
-
-            .column:first-child::after,
-            .column:last-child::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                width: 100vw;
-                height: 100%;
-                z-index: -1;
-            }
-
-            .column:first-child::after {
-                right: 0;
-                background-color: var(--color-contrast);
-            }
-
-            .column:last-child::after {
-                left: 0;
-
-            }
-
-            .social__wrap svg path {
-                fill: #fff;
-                transition: all 0.2s ease-in-out;
-            }
-
-            .social__wrap svg:hover path {
-                fill: var(--color-contrast-hover);
-            }
-        }
-
-        /* print styles */
-        @media print {
-            .photo {
-                width: 230px;
-            }
-
-            .column__wrap {
-                max-width: 800px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: stretch;
-            }
-
-            .column:first-child {
-                width: 50%;
-            }
-
-            .column:last-child {
-                width: 50%;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <div class="column__wrap">
-        <div class="column">
-            <!-- Main info -->
-            <!-- https://ru.imgbb.com/  -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="https://i.ibb.co/6N0x2bn/94392928-255943675532392-5914901508988196547-n.jpg"
-                            alt="photo" />
+    <!-- header -->
+    <header>
+        <div class="wrapper">
+            <!-- Avatar  https://ru.imgbb.com/  -->
+            <div class="flip__card">
+                <div class="flip__card-inner">
+                    <div class="flip__card-front">
+                        <img src="./assets/img/front.jpg" alt="photo" />
                     </div>
-                    <div class="flip-card-back">
-                        <img src="https://i.ibb.co/4P6cvfq/242227088-888502772065667-8505470828816647908-n.jpg"
-                            alt="photo" />
+                    <div class="flip__card-back">
+                        <img src="./assets/img/back.jpg" alt="photo" />
                     </div>
                 </div>
             </div>
-
-            <h2>Lytvynenko Anna | Kyiv, Ukraine</h2>
-            <!-- Social -->
-            <div class="social__wrap">
-                <a href="https://t.me/thealmie" target="_blank" rel="noopener noreferrer"><svg role="img"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Telegram</title>
-                        <path
-                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                    </svg></a>
-                <a href="https://www.linkedin.com/in/anna-lytvynenko-9b1631101" target="_blank"
-                    rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>LinkedIn</title>
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg></a>
-                <a href="https://github.com/AnnaAlmie" target="_blank" rel="noopener noreferrer"><svg role="img"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>GitHub</title>
-                        <path
-                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                    </svg></a>
-                <!--  <a href="https://www.instagram.com/almie_death/" target="_blank" rel="noopener noreferrer"><svg
-                        role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Instagram</title>
-                        <path
-                            d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                    </svg></a> -->
-
+            <div>
+                <h1>
+                    <small>Hi, I`m <mark>Anna Lytvynenko</mark> your next</small><br />
+                    FrontEnd developer
+                </h1>
+                <!--=====================================================================================================
+                    Social
+                =====================================================================================================  -->
+                <address class="social__wrap">
+                    <a class="social" href="https://t.me/thealmie" target="_blank" rel="noopener noreferrer"><svg
+                            role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>go to Telegram</title>
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg></a>
+                    <a class="social" href="https://www.linkedin.com/in/anna-lytvynenko-frontend/" target="_blank"
+                        rel="noopener noreferrer">
+                        <ion-icon name="logo-linkedin" title="go to LinkedIn"></ion-icon>
+                    </a>
+                    <a class="social" href="https://github.com/AnnaAlmie" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-github" title="go to GitHub"></ion-icon>
+                    </a>
+                    <ion-icon class="social" name="logo-google" title="click to Copy email"
+                        onclick="navigator.clipboard.writeText('annalitvinenko9@gmail.com')"
+                        style="cursor: pointer;"></ion-icon>
+                    <!-- <ion-icon class="social" name="location-outline" title="Kyiv, Ukraine"></ion-icon> -->
+                    <img src="./assets/img/made-in-ukraine.png" class="social" title="from Kyiv, Ukraine" />
+                </address>
             </div>
-            <h4 class="label">More</h4>
-            <p>
-                Blackout? Not a problem, I have an Internet connection and a laptop for at least 9 hours of stable work.
-                FOP 3d group. Relocate not allowed.
-            </p>
-            <!--  skill -->
+        </div>
+    </header>
+    <!-- end header -->
+    <main class="column__wrap wrapper">
+        <!-- aside column -->
+        <aside class="column">
+            <!-- Language -->
+            <h4 class="label" style="margin-top: 0;">Language</h4>
+            {
+            <div class="tabbed"><span class="blue">ukrainian</span>: <span class="orange">'native'</span>;</div>
+            <div class="tabbed"><span class="blue">english</span>: <span class="orange">'upper intermediate /
+                    B2-'</span>;</div>
+            <div class="tabbed"><span class="blue">russian</span>: <span class="orange">'try to forget'</span>;</div>
+            }
+            <!--=====================================================================================================
+                skill
+            =====================================================================================================  -->
             <h4 class="label">Hard skill</h4>
             <div class="btns">
-                <span>Vue3</span>
-                <span>Vue2</span>
-                <span>VueCLI</span>
-                <span>Vite</span>
+                <span>Vue v.3</span>
+                <span>Vue v.2</span>
+                <span>VueRouter</span>
                 <span>Vuex</span>
                 <span>Pinia</span>
-                <span>VueRouter</span>
+                <br />
+                <span>Nuxt.js</span>
+                <span>Vite</span>
+                <span>VueCLI</span>
                 <span>VeeValidate</span>
                 <span>VueUse</span>
-                <span>Nuxt.js</span>
+                <br />
                 <span>TypeScript</span>
                 <span>JavaScript</span>
-                <span>ES6+</span>
                 <span>jQuery</span>
                 <span>JSON</span>
                 <span>AJAX</span>
-                <span>Rest API</span>
-                <span>Composition API</span>
-                <span>AXIOS</span>
-                <span>Stripe API</span>
-                <span>YouTube API</span>
-                <span>Google Drive API</span>
-                <span>Vuetify</span>
-                <span>Tailwind</span>
-                <span>BootStrap</span>
-                <span>FlexBox</span>
-                <span>Grid</span>
-                <span>Scss</span>
-                <span>Sass</span>
+                <br />
+                <span>React</span>
+                <span>RestAPI</span>
+                <span>StripeAPI</span>
+                <span>YouTubeAPI</span>
+                <span>GoogleAPI</span>
+                <span>SupabaseAPI</span>
                 <span>Postman</span>
-                <span>basePHP(Laravel)</span>
+                <span>WebWorker</span>
+                <br />
+                <span>Tailwind CSS</span>
+                <span>Vuetify</span>
+                <span>BootStrap</span>
+                <span>Scss</span>
+                <span>CSS3</span>
+                <span>BEM</span>
+                <span>Semantic</span>
+                <span>Atomic CSS</span>
+                <span>ECSS</span>
+                <span>PixelPerfect</span>
+                <br />
                 <span>Highcharts.js</span>
                 <span>vue-chart.js</span>
                 <span>Chart.js</span>
+                <span>Swiper.js</span>
+                <span>Slick.js</span>
+                <span>howler.js</span>
+                <span>anime.js</span>
+                <br />
                 <span>GitHub</span>
                 <span>GitLab</span>
                 <span>Webpack</span>
+                <span>CI/CD</span>
+                <span>Git Extentions</span>
+                <br />
                 <span>Jira</span>
                 <span>YouTrack</span>
                 <span>Worksection</span>
+                <span>Trello</span>
+                <span>Slack</span>
+                <br />
                 <span>Figma</span>
                 <span>AdobePhotoshop</span>
-                <span>AdobeIllustrator</span>
                 <span>Blender</span>
                 <span>SonyVegas</span>
-                <span>Pixel Perfect</span>
-                <span>CSS animation</span>
-                <span>svg/canvas</span>
-                <span>Animate.css</span>
-                <span>Slick.js</span>
-                <span>Swiper.js</span>
-                <span>howler.js</span>
             </div>
-            <h4 class="label">Soft skill</h4>
-            <ul>
-                <li>Mobile First, semantic, cross-browser and adaptive layout </li>
-                <li>
-                    Ability prioritize multiple tasks effectively, work in several
-                    projects simultaneously
-                </li>
-                <li>Always make it better, code improvement, quickly learn</li>
-                <li>
-                    Self-motivated, dedicated, and willing to go for extra mile with a
-                    delicious coffee
-                </li>
-            </ul>
-            <!-- Language -->
-            <h4 class="label">Language</h4>
-            <ul>
-                <li>Ukrainian | native </li>
-                <li>English | B2-</li>
-            </ul>
-
             <!-- Progress -->
-            <h4 class="label">In progress of exploring</h4>
+            <!-- <h4 class="label">In progress of exploring</h4>
             <div class="btns">
-                <span>React</span>
-                <span>Next.js</span>
                 <span>Vitest</span>
-                <span>Jest</span>
-                <span>Tree.js</span>
-                <!-- <span>GSAP</span> -->
-                <!-- <span>Spine</span> -->
-            </div>
-        </div>
-        <div class="column">
-            <h1>FrontEnd developer</h1>
-            <!-- 0 -->
-            <details open>
-                <summary>Public Code Example</summary>
-                <div>
-                    <a href="https://annaalmie.github.io/EquipmentTheWitcher/" target="_blank"
-                        rel="noopener noreferrer">gear-find.test</a> <span class="color-grey"><small>(Vue-3, TS, Pinia,
-                            VueUseStore)</small></span>
-                </div>
-            </details>
-            <!-- Work -->
-            <details open>
-                <summary>
-                    09.2019 - 06.2022 | <b>FrontEnd developer (Vue/Nuxt)</b>
-                </summary>
-                <div>
-                    Company: <b><a href="https://cooltool.com/" target="_blank" rel="noopener noreferrer">CoolTool</a>
-                        <small>(for Conscious + Nonconscious Insights ONE PLATFORM)</small></b>
-                </div>
-                <div>
-                    Type: Own products
-                </div>
-                <div>
-                    Responsibility: create web sites use Vue 2/3, VueCLI, Vuex, VueRouter, VeeValidate, Nuxt.js, TS/JS,
-                    Rest API, AXIOS, YouTube API, Vuetify, Highcharts.js
-                </div>
-                <p>
-                    Administrator site for clients to manage projects, create different questionnaire, pay subscription,
-                    edit account, and take all analytics (in charts or tables) about all projects, realtime data
-                    update:<br />
-                    <a class="link" href="https://app.uxreality.com/" target="_blank"
-                        rel="noopener noreferrer">app.uxreality.com/</a><br />
-
-                    <a class="link" href="https://dxreality.com/" target="_blank"
-                        rel="noopener noreferrer">dxreality.com/</a>
-                </p>
-                <p>Info sites about projects: <br />
-                    <a class="link" href="https://cooltool.com/" target="_blank"
-                        rel="noopener noreferrer">cooltool.com/</a><br />
-                    <a class="link" href="https://uxreality.com/" target="_blank"
-                        rel="noopener noreferrer">uxreality.com/</a>
-                </p>
-                <p>Inner tool for researcher (clone): <br />
-                    ux.instagram.com<br />
-                    ux.youtube.com
-                </p>
-                <p>Inner tool:<br />
-                    questionnaire.com
-                </p>
-            </details>
-            <!-- 2 -->
-            <details open>
-                <summary>
-                    10.2017 - 08.2019 | <b>FrontEnd developer (JS / jQuery)</b>
-                </summary>
-
-                <div>Company: <b><a href="https://freshweb.agency/" target="_blank" rel="noopener noreferrer">Fresh
-                            creative web agency</a></b>
-                    <small>(wow sites for Ukraine, Europe)</small>
-                </div>
-                <div>Type: Outsourcing</div>
-                <div>Responsibility: create web sites use html, css, js, jquery, ajax, vue</div>
-                <p>
-                    <a href="https://www.behance.net/gallery/79643841/Creating-Landing-for-First-Trade-Company/modules/461929943"
-                        target="_blank" rel="noopener noreferrer">firsttrade.com.ua</a><br />
-                    <a href="https://drugstore.j2landing.com/" target="_blank"
-                        rel="noopener noreferrer">drugstore.org.ua</a><br />
-                    <a href="https://www.behance.net/gallery/79643015/Landing-for-Drugstore/modules/461925105"
-                        target="_blank" rel="noopener noreferrer">map.drugstore.org.ua</a><br />
-                    <a href="https://590.ua/" target="_blank" rel="noopener noreferrer">590.ua</a><br />
-                    <a href="http://ideafix.ua/" target="_blank" rel="noopener noreferrer">ideafix.ua</a><br />
-                    <a href="https://freshweb.agency/ru/portfolio/korporativnij-sajt-zhk-intergal-siti/" target="_blank"
-                        rel="noopener noreferrer">intergal.city</a><br />
-                    <a href="https://www.behance.net/gallery/116179749/redizajn-sajta-mebeli" target="_blank"
-                        rel="noopener noreferrer">alma-mebel.com.ua</a><br />
-                    <a href="https://www.behance.net/gallery/86664555/logotipy/modules/501453395" target="_blank"
-                        rel="noopener noreferrer">Quran Online</a><br />
-                    medpravda.com.ua<br />
-                    MedPravda (landing-constructor)<br />
-                    MedPravda (custom CMS)<br />
-                    Royal House (landing)<br />
-                    SportCamps (landing)
-                </p>
-            </details>
-            <!-- 3 -->
-            <details open>
-                <summary>11.2016 - 10.2017 | <b>FrontEnd developer</b>
-                </summary>
-                <div>Company: <b><a href="https://web-stolica.com.ua/" target="_blank"
-                            rel="noopener noreferrer">Web-Stolica</a></b>
-                    <small>(creative web agency)</small>
-                </div>
-                <div>Type: Outsourcing</div>
-                <div>Responsibility: create web sites use html, css, js, Wordpress CMS, Opencart CMS</div>
-                <p>
-                    <a href="http://brains-ua.com/" target="_blank" rel="noopener noreferrer">brains-ua.com/</a><br />
-                    <a href="http://cupor.com.ua/" target="_blank" rel="noopener noreferrer">cupor.com.ua/</a><br />
-                    <a href="http://gratas.com.ua/" target="_blank" rel="noopener noreferrer">gratas.com.ua/</a><br />
-
-                    <a href="https://web-stolica.com.ua/ru/portfolio/domass/" target="_blank"
-                        rel="noopener noreferrer">domass.org.ua</a> <br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-24love-com-ua/" target="_blank"
-                        rel="noopener noreferrer">24love.com.ua/</a> <br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-farsh-in-ua/" target="_blank"
-                        rel="noopener noreferrer">farsh.in.ua</a> <br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/sayt-vash-stil-kiev-ua/" target="_blank"
-                        rel="noopener noreferrer">vash-stil.kiev.ua</a> <br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-convektor-top/" target="_blank"
-                        rel="noopener noreferrer">convektor.top</a> <br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/internet-magazin-fancoil-in-ua/" target="_blank"
-                        rel="noopener noreferrer">fancoil.in.ua</a><br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-polvax-site/" target="_blank"
-                        rel="noopener noreferrer">polvax.site</a><br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-europosm/" target="_blank"
-                        rel="noopener noreferrer">s1.4444.in.ua</a> (+ownDesign) <br />
-                    <a href="http://elgran.com.ua/" target="_blank" rel="noopener noreferrer">elgran.com.ua/</a>
-                    (+ownDesign) <br />
-                    <a href="http://recodent.com.ua/" target="_blank" rel="noopener noreferrer">recodent.com.ua/</a>
-                    (+ownDesign)<br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/magazin-syrna-lavka-com-ua/" target="_blank"
-                        rel="noopener noreferrer">syrna-lavka.com.ua</a> (+ownDesign)<br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-promo-recodent-com-ua/"
-                        target="_blank" rel="noopener noreferrer">promo.recodent.com.ua/</a> (+ownDesign)<br />
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-seaofspa-com-ua/" target="_blank"
-                        rel="noopener noreferrer">seaofspa.com.ua/</a> (+ownDesign)<br />
-
-                    <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-sumo-org-ua/" target="_blank"
-                        rel="noopener noreferrer">sumo.org.ua/</a> (+ownDesign)<br />
-
-                    <a href="https://web-stolica.com.ua/ru/portfolio/sayt-elizabeth-angel-com/ " target="_blank"
-                        rel="noopener noreferrer">elizabeth-angel.com/</a>
-                </p>
-            </details>
-
-            <!-- 4 -->
-            <details>
-                <summary>09.2015 - 09.2016 | <b>Web Content Manager</b></summary>
-                <div>
-                    Company:
-                    <b><a href="http://fabricmood.com/" target="_blank" rel="noopener noreferrer">FabricMood</a></b>
-                    <small>(wholesale and retail of fabrics)</small>
-                </div>
-                <div>Responsibility: photo of product, add products (custom CMS), manage developers, manage Google Ads,
-                    online sale
-                    of products.</div>
-            </details>
-            <!-- 5 -->
-            <details>
-                <summary>03.2014 - 02.2020 | <b>Web Content Manager</b>
-                </summary>
-                <div>
-                    Company: <b><a href="https://dside.com.ua/" target="_blank" rel="noopener noreferrer">D.SIDE dance
-                            studio</a></b> <small>(Dance studio)</small>
-                </div>
-                <div>
-                    Responsibility: add, update content (Drupal CMS).
-                    <br />
-                    Create myown first site - <a href="http://shop.dside.com.ua/" target="_blank"
-                        rel="noopener noreferrer">D.side shop</a>
-                    (Opencart CMS).
-                </div>
-            </details>
-            <!-- 6 -->
-            <details>
-                <summary>
-                    05.2010 - 01.2013 | <b>SEO Marketing specialist</b>
-                </summary>
-                <div>
-                    Company: <b><a href="https://jobs.dou.ua/companies/bms-soft/" target="_blank"
-                            rel="noopener noreferrer">BMSsoft</a></b> <small>(software development life cycle)</small>
-                </div>
-                <div>Type: Product-based IT</div>
-                <div>Responsibility: promote the company to the TOP-3 Google.</div>
-            </details>
-
-
-            <!-- Education -->
-            <!-- <h4>Education</h4>
-            <ul>
-                <li>Front-end 160 hours (2016, Main Academy)</li>
-                <li>Java junior 20 hours (2015, Prog Kiev.ua)</li>
-                <li>
-                    Economics and Management, International Relations (Ukrainian State
-                    University of Finance and International Trade )
+                <span>Ionic vue</span>
+                <span>Svelte</span>
+            </div> -->
+            <!-- Soft  -->
+            <h4 class="label">Soft skill</h4>
+            <code>&lt;ul&gt;</code>
+            <ul class="list__none">
+                <code>&lt;li&gt;</code>
+                <li class="tabbed">
+                    <em>Teamworker:</em> work as part, able to communicate effectively with other members,
+                    collaborate and contribute to a positive team dynamic.
                 </li>
-            </ul> -->
-
-            <!-- -->
-        </div>
-    </div>
+                <code>&lt;/li&gt;</code>
+                <code>&lt;li&gt;</code>
+                <li class="tabbed">
+                    <em>Time management:</em> deadlines are not missed, reasonable set timings, responsible work in
+                    multi-mode.
+                </li>
+                <code>&lt;/li&gt;</code>
+                <code>&lt;li&gt;</code>
+                <li class="tabbed">
+                    <em>Attention:</em> have a keen eye for detail, clean code and organized projects, always
+                    looking for things that can be refactored.
+                </li>
+                <code>&lt;/li&gt;</code>
+                <code>&lt;li&gt;</code>
+                <li class="tabbed">
+                    <em>Patience and persistence:</em> troubleshooting and debugging, able to identify and solve
+                    problems quickly and efficiently.
+                </li>
+                <code>&lt;/li&gt;</code>
+                <code>&lt;li&gt;</code>
+                <li class="tabbed">
+                    <em>Empathy and Creativity:</em> try to understanding the needs and perspectives of users to
+                    create user-friendly and accessible interfaces, come up with creative solutions to design
+                    challenges.
+                </li>
+                <code>&lt;/li&gt;</code>
+                <code>&lt;li&gt;</code>
+                <li class="tabbed">
+                    <em>Adaptability:</em> as technologies and programming languages evolve, I`m always
+                    self-improvementand and continuous learning to stay up-to-date.
+                </li>
+                <code>&lt;/li&gt;</code>
+            </ul>
+            <code>&lt;/ul&gt;</code>
+        </aside>
+        <!-- end aside column -->
+        <!-- main column -->
+        <div class="column">
+            <section>
+                <!--=====================================================================================================
+                FAQ
+            =====================================================================================================  -->
+                <details>
+                    <summary>
+                        <b>FAQ</b>
+                    </summary>
+                    <!--  -->
+                    <fieldset>
+                        <legend>How many years ...?</legend>
+                        <ul>
+                            <li>JavaScript: 6+ years of commercial</li>
+                            <li>TypeScript: 1+ years of commercial</li>
+                            <li>Vue v3: 2+ years of commercial</li>
+                            <li>Vue v2: 3+ years of commercial</li>
+                            <li>Nuxt: 3+ years of commercial</li>
+                            <li>React: 1- year</li>
+                            <li>SEO: 10+ years of commercial</li>
+                        </ul>
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Fullstack?</legend>
+                        I have no desire to work with the backend, I want to be a professional in the frontend.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Did you have a leading experience?</legend>
+                        Have experience in leading large projects, with command about 3-4 developer coworkers. I had
+                        experience with onboarding employees.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>How is your English?</legend>
+                        Сan communicate on simple everyday or work topics, read and write documentatios, all
+                        professional videos and literature.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Where are you currently located?</legend>
+                        Now I`m in Kiev, this is my Home. No relocate accepted, only for vacations or business trips. I
+                        prefer a hybrid work schedule.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Stable Internet connection?</legend>
+                        Not a problem, I have an Internet connection about 3+ days and a laptop for at least 9 hours of
+                        stable work.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Why are you looking for a new job?</legend>
+                        Because of WAR, I lost my previous job.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>ФОП?</legend>
+                        Yes, private entrepreneur 3d group.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>What minimum wage are you considering? </legend>
+                        As closely the salary corresponds to the market, as more I will think about work,
+                        not about where to find more money.
+                        <br />
+                        Wish to have <span class="link" id="money">`1${(''+Math.random()).substring(2,7)}uah`</span>
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>When you can start new work?</legend>
+                        In Thursday <ion-icon name="happy-outline" style="margin-bottom: -3px;"></ion-icon>.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Are you stressfull?</legend>
+                        I`m Ukranian.
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Public Code Example?</legend>
+                        <div>
+                            <a href="https://annaalmie.github.io/EquipmentTheWitcher/" target="_blank"
+                                rel="noopener noreferrer">gear-find.test</a> <span><small> | Vue 3, TS, Pinia,
+                                    VueUseStore</small></span>
+                        </div>
+                    </fieldset>
+                    <!--  -->
+                    <fieldset>
+                        <legend>Education</legend>
+                        <ul>
+                            <li>Відзнака оцінки навичок LinkedIn: <br />
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/skill-assessments/Front-End%20Development/report/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_skills_details%3B7rLhaAzQQ6a%2Fvqwb%2FThOmA%3D%3D">Front-End</a>,
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/skill-assessments/JavaScript/report/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_skills_details%3B7rLhaAzQQ6a%2Fvqwb%2FThOmA%3D%3D">JavaScript</a>,
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/skill-assessments/HTML/report/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_skills_details%3B7rLhaAzQQ6a%2Fvqwb%2FThOmA%3D%3D">HTML</a>,
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/skill-assessments/CSS/report/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_skills_details%3B7rLhaAzQQ6a%2Fvqwb%2FThOmA%3D%3D">CSS</a>
+                            </li>
+                            <li><a target="_blank" href="./assets/img/sertifications/brain_academy.jpg">Front-end 160
+                                    hours (2016,
+                                    Brain Academy)</a></li>
+                            <li><a target="_blank" href="./assets/img/sertifications/prog_ua.jpg">Java junior 20 hours
+                                    (2015,
+                                    Prog Kiev.ua)</a></li>
+                        </ul>
+                    </fieldset>
+                </details>
+                <!--=====================================================================================================
+                CoolTool
+            =====================================================================================================  -->
+                <details open>
+                    <summary>
+                        <b>FrontEnd developer (Vue/Nuxt)</b>
+                    </summary>
+                    <div>
+                        <code>&lt;company&gt;</code>
+                        <a href="https://cooltool.com/" target="_blank" rel="noopener noreferrer">CoolTool</a>
+                        <code>&lt;/company&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;type&gt;</code>
+                        Own products
+                        <code>&lt;/type&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;date&gt;</code>
+                        35 months
+                        <small class="green">| 08.2019 - 06.2022</small>
+                        <code>&lt;/date&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;responsibility&gt;</code>
+                        <p class="tabbed">Create web projects based on Figma-design, use Vue 2/3, VueEcosystem,
+                            Nuxt.js, TS/JS, Vuetify, custom charts, stripe. All information load with Rest API (get,
+                            add, create, update in realtime, delete).</p>
+                        <code>&lt;/responsibility&gt;</code>
+                    </div>
+                    <div class="mt">
+                        <a href="https://app.uxreality.com/" target="_blank"
+                            rel="noopener noreferrer">app.uxreality.com/</a>
+                        <small>| Vue 2&rarr;3</small>
+                    </div>
+                    <div>
+                        <a href="https://dxreality.com/" target="_blank" rel="noopener noreferrer">dxreality.com/</a>
+                        <small>| Vue 3</small>
+                    </div>
+                    <div>
+                        <a href="https://cooltool.com/" target="_blank" rel="noopener noreferrer">cooltool.com/</a>
+                        <small>| Nuxt</small>
+                    </div>
+                    <div>
+                        <a href="https://uxreality.com/" target="_blank" rel="noopener noreferrer">uxreality.com/</a>
+                        <small>| Nuxt</small>
+                    </div>
+                    <div>
+                        ux.instagram.com
+                        <small>| Vue 2</small>
+                    </div>
+                    <div>
+                        ux.youtube.com
+                        <small>| Vue 3</small>
+                    </div>
+                    <div>
+                        questionnaire.com
+                        <small>| Vue 2</small>
+                    </div>
+                </details>
+                <!--=====================================================================================================
+                Fresh
+            =====================================================================================================  -->
+                <details open>
+                    <summary>
+                        <b>FrontEnd developer (JS/jQuery)</b>
+                    </summary>
+                    <div>
+                        <code>&lt;company&gt;</code>
+                        <a href="https://freshweb.agency/" target="_blank" rel="noopener noreferrer">Fresh
+                            creative web agency</a>
+                        <code>&lt;/company&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;type&gt;</code>
+                        Outsourcing
+                        <code>&lt;/type&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;date&gt;</code>
+                        23 months
+                        <small class="green">| 10.2017 - 08.2019</small>
+                        <code>&lt;/date&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;responsibility&gt;</code>
+                        <p class="tabbed">
+                            Create web sites based on AdobePhotoshop/Figma, use html, sass, js/jquery, ajax, Vue v2. All
+                            sites full responsive, PixelPerfect, individual animation, all browzers support and SEO.</p>
+                        <code>&lt;/responsibility&gt;</code>
+                    </div>
+                    <div class="mt">
+                        <a href="https://www.behance.net/gallery/79643841/Creating-Landing-for-First-Trade-Company/modules/461929943"
+                            target="_blank" rel="noopener noreferrer">firsttrade.com.ua</a>
+                    </div>
+                    <div><a href="https://drugstore.j2landing.com/" target="_blank"
+                            rel="noopener noreferrer">drugstore.org.ua</a></div>
+                    <div><a href="https://www.behance.net/gallery/79643015/Landing-for-Drugstore/modules/461925105"
+                            target="_blank" rel="noopener noreferrer">map.drugstore.org.ua</a></div>
+                    <div><a href="https://590.ua/" target="_blank" rel="noopener noreferrer">590.ua</a></div>
+                    <div><a href="http://ideafix.ua/" target="_blank" rel="noopener noreferrer">ideafix.ua</a></div>
+                    <div><a href="https://freshweb.agency/ru/portfolio/korporativnij-sajt-zhk-intergal-siti/"
+                            target="_blank" rel="noopener noreferrer">intergal.city</a></div>
+                    <div><a href="https://www.behance.net/gallery/116179749/redizajn-sajta-mebeli" target="_blank"
+                            rel="noopener noreferrer">alma-mebel.com.ua</a></div>
+                    <div><a href="https://www.behance.net/gallery/86664555/logotipy/modules/501453395" target="_blank"
+                            rel="noopener noreferrer">Quran Online</a></div>
+                    <div>medpravda.com.ua</div>
+                    <div>MedPravda (landing-constructor)</div>
+                    <div>MedPravda (custom CMS)</div>
+                    <div>Royal House (landing)</div>
+                    <div>SportCamps (landing)</div>
+                    </p>
+                </details>
+                <!--=====================================================================================================
+                Web-Stolica
+            =====================================================================================================  -->
+                <details>
+                    <summary>
+                        <b>FrontEnd developer (Wordpress/Opencart)</b>
+                    </summary>
+                    <div>
+                        <code>&lt;company&gt;</code>
+                        <a href="https://web-stolica.com.ua/" target="_blank" rel="noopener noreferrer">Web-Stolica</a>
+                        <code>&lt;/company&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;type&gt;</code>
+                        Outsourcing
+                        <code>&lt;/type&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;date&gt;</code>
+                        12 months
+                        <small class="green">| 11.2016 - 11.2017</small>
+                        <code>&lt;/date&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;responsibility&gt;</code>
+                        <p class="tabbed">
+                            Create web sites use html, css, js, Wordpress CMS, Opencart CMS.</p>
+                        <code>&lt;/responsibility&gt;</code>
+                    </div>
+                    <div class="mt">
+                        <a href="http://brains-ua.com/" target="_blank" rel="noopener noreferrer">brains-ua.com/</a>
+                    </div>
+                    <div><a href="http://cupor.com.ua/" target="_blank" rel="noopener noreferrer">cupor.com.ua/</a>
+                    </div>
+                    <div> <a href="http://gratas.com.ua/" target="_blank" rel="noopener noreferrer">gratas.com.ua/</a>
+                    </div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/domass/" target="_blank"
+                            rel="noopener noreferrer">domass.org.ua</a> </div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-24love-com-ua/" target="_blank"
+                            rel="noopener noreferrer">24love.com.ua/</a> </div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-farsh-in-ua/" target="_blank"
+                            rel="noopener noreferrer">farsh.in.ua</a></div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/sayt-vash-stil-kiev-ua/" target="_blank"
+                            rel="noopener noreferrer">vash-stil.kiev.ua</a> </div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-convektor-top/" target="_blank"
+                            rel="noopener noreferrer">convektor.top</a></div>
+                    <div><a href="https://web-stolica.com.ua/ru/portfolio/internet-magazin-fancoil-in-ua/"
+                            target="_blank" rel="noopener noreferrer">fancoil.in.ua</a></div>
+                    <div><a href="https://web-stolica.com.ua/ru/portfolio/landing-page-polvax-site/" target="_blank"
+                            rel="noopener noreferrer">polvax.site</a></div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-europosm/" target="_blank"
+                            rel="noopener noreferrer">s1.4444.in.ua</a> </div>
+                    <div> <a href="http://elgran.com.ua/" target="_blank" rel="noopener noreferrer">elgran.com.ua/</a>
+                    </div>
+                    <div> <a href="http://recodent.com.ua/" target="_blank"
+                            rel="noopener noreferrer">recodent.com.ua/</a>
+                    </div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/magazin-syrna-lavka-com-ua/" target="_blank"
+                            rel="noopener noreferrer">syrna-lavka.com.ua</a></div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-promo-recodent-com-ua/"
+                            target="_blank" rel="noopener noreferrer">promo.recodent.com.ua/</a> </div>
+                    <div><a href="https://web-stolica.com.ua/ru/portfolio/landing-page-seaofspa-com-ua/" target="_blank"
+                            rel="noopener noreferrer">seaofspa.com.ua/</a></div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/landing-page-sumo-org-ua/" target="_blank"
+                            rel="noopener noreferrer">sumo.org.ua/</a> </div>
+                    <div> <a href="https://web-stolica.com.ua/ru/portfolio/sayt-elizabeth-angel-com/ " target="_blank"
+                            rel="noopener noreferrer">elizabeth-angel.com/</a></div>
+                </details>
+                <!--=====================================================================================================
+                FabricMood
+            =====================================================================================================  -->
+                <details>
+                    <summary><b>Web Content Manager</b></summary>
+                    <div>
+                        <code>&lt;company&gt;</code>
+                        <a href="http://fabricmood.com/" target="_blank" rel="noopener noreferrer">FabricMood</a>
+                        <code>&lt;/company&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;type&gt;</code>
+                        Own product (wholesale and retail of fabrics)
+                        <code>&lt;/type&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;date&gt;</code>
+                        12 months
+                        <small class="green">| 09.2015 - 09.2016</small>
+                        <code>&lt;/date&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;responsibility&gt;</code>
+                        <p class="tabbed">
+                            Photo and adding products to the site (custom CMS), manage developers, manage Google Ads,
+                            online sale of products.</p>
+                        <code>&lt;/responsibility&gt;</code>
+                    </div>
+                </details>
+                <!--=====================================================================================================
+                D.SIDE
+            =====================================================================================================  -->
+                <details>
+                    <summary><b>Web Content Manager</b>
+                    </summary>
+                    <div>
+                        <code>&lt;company&gt;</code>
+                        <a href="https://dside.com.ua/" target="_blank" rel="noopener noreferrer">D.SIDE dance
+                            studio</a>
+                        <code>&lt;/company&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;type&gt;</code>
+                        Dance studio
+                        <code>&lt;/type&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;date&gt;</code>
+                        70 months
+                        <small class="green">| 03.2014 - 12.2019</small>
+                        <code>&lt;/date&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;responsibility&gt;</code>
+                        <p class="tabbed"> Add, update content (Drupal CMS), social media (YouTube, Twitter, Facebook,
+                            Instagram).</p>
+                        <p class="tabbed">Create myown first site - <a href="http://shop.dside.com.ua/" target="_blank"
+                                rel="noopener noreferrer">D.side shop</a>
+                            (Opencart CMS).</p>
+                        <code>&lt;/responsibility&gt;</code>
+                    </div>
+                </details>
+                <!--=====================================================================================================
+                BMSsoft
+            =====================================================================================================  -->
+                <details>
+                    <summary>
+                        <b>SEO Marketing specialist</b>
+                    </summary>
+                    <div>
+                        <code>&lt;company&gt;</code>
+                        <a href="https://jobs.dou.ua/companies/bms-soft/" target="_blank"
+                            rel="noopener noreferrer">BMSsoft</a>
+                        <code>&lt;/company&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;type&gt;</code>
+                        Product-based IT: software development life cycle
+                        <code>&lt;/type&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;date&gt;</code>
+                        33 months
+                        <small class="green">| 05.2010 - 01.2013</small>
+                        <code>&lt;/date&gt;</code>
+                    </div>
+                    <div>
+                        <code>&lt;responsibility&gt;</code>
+                        <p class="tabbed">Promote the company in the TOP-3 of Google.</p>
+                        <code>&lt;/responsibility&gt;</code>
+                    </div>
+                </details>
+            </section>
+            <!--=====================================================================================================
+                About
+            =====================================================================================================  -->
+            <section>
+                <h4 class="label">About</h4>
+                <!--  -->
+                <code>&lt;p&gt;</code>
+                <p class="tabbed">
+                    I am a FrontEnd UI/UX developer with over 6 years of experience in building responsive,
+                    user-friendly web applications and websites. My inner perfectionist strives to translate design into
+                    code-structure as accurately as possible.</p>
+                <p class="tabbed">My good trait is perseverance, for example, I had a bug for six months that everyone
+                    forgot about, but I found a solution. Refactoring is a way of life, I like to structure
+                    everything, optimize, find novelty and implement them.</p>
+                <p class="tabbed">I <del>work for money.</del> don't want to work for a company that will constantly
+                    repeat "the client wanted It only This way" or "the client is Always right", That's why they hire
+                    us-specialists.</p>
+                <p class="tabbed">I'am happy to spend my time, my efforts and my knowledge to
+                    make each sprint a part of teamwork that will be useful for many users.</p>
+                <code>&lt;/p&gt;</code>
+            </section>
+            <!--=====================================================================================================
+                reviews
+            =====================================================================================================  -->
+            <!--  <section class="review">
+                <h4 class="label">Coworkers review</h4>
+               
+                <blockquote>
+                    Nulla maxime voluptas, rerum fugit vitae, a libero dolor dolorum, molestias nostrum deleniti dolorem
+                    fuga quis reprehenderit alias incidunt aspernatur eveniet! Perspiciatis ex saepe molestias, possimus
+                    voluptatibus rem ea asperiores.
+                    Autem commodi nesciunt delectus error ipsum laudantium doloremque velit quasi porro voluptatum, ipsa
+                    doloribus ullam incidunt eum beatae. Ipsa dolor eius harum exercitationem nesciunt. Eum quia sint
+                    maiores nam velit!<cite>—
+                        Michelle Obama</cite></blockquote>
+            </section>  -->
+        </div><!-- main column -->
+    </main>
+    <!-- footer -->
+    <footer>
+        <!-- Quotes -->
+        <section class="runline">
+            <div class="runline__block">
+                <blockquote>We need to do a better job of putting ourselves higher on our own 'to-do' list. <cite>—
+                        Michelle Obama</cite></blockquote>
+                <blockquote>You can build your business life where you are working with people you want to work with.
+                    Then it becomes a pleasure, and then you can do better. <cite>— Andy Morgan</cite></blockquote>
+                <blockquote>You can't do a good job if your job is all you do. <cite>— Katie Thurmes</cite></blockquote>
+                <blockquote>Be steady and well-ordered in your life so that you can be fierce and original in your work.
+                    <cite>— Gustave Flaubert</cite>
+                </blockquote>
+                <blockquote>You can't have everything you want, but you can have the things that really matter to you.
+                    <cite>— Marissa Mayer</cite>
+                </blockquote>
+                <blockquote>The gift of balance in your life—may you find the balance of life, time for work but also
+                    time for play. Too much of one thing ends up creating stress that no one needs in their life.
+                    <cite>— Catherine Pulsifer</cite>
+                </blockquote>
+                <blockquote>Balance is not something you find; it's something you create.
+                    <cite>— Jana Kingsford</cite>
+                </blockquote>
+            </div>
+        </section>
+        <!-- end Quotes -->
+        <section class="wrapper">
+            <div class="footer__rights">
+                &copy; last update <b><time datetime="12.06.2023">12.06.23</time></b> | version 6.0
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+    <!-- icons https://ionic.io/ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- end icons -->
+    <script defer>
+        const num = `1${('' + Math.random()).substring(2, 7)}uah`; //0.3093110159542509
+        document.getElementById('money').setAttribute('title', num);
+    </script>
 </body>
 
 </html>

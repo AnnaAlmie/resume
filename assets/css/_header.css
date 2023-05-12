@@ -1,0 +1,31 @@
+header {
+    background-color: var(--color-black);
+    color: var(--color-light);
+}
+
+header .wrapper {
+    padding: 0.625rem;
+}
+
+h1 small {
+    font-size: 60%;
+}
+
+@media (max-width: 819px) {
+    header {
+        text-align: center;
+    }
+
+    .flip__card {
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 820px) {
+    header .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}

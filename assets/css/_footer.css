@@ -1,0 +1,35 @@
+.footer__rights {
+    text-align: center;
+    padding: 0.625rem;
+}
+
+.runline {
+    overflow-x: hidden;
+    background: var(--color-black);
+    color: var(--color-light);
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5625rem;
+}
+
+.runline__block {
+    width: fit-content;
+    position: relative;
+    white-space: nowrap;
+    animation: text 90s infinite linear;
+}
+
+.runline__block blockquote {
+    display: inline-block;
+    margin: 0 20vw;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

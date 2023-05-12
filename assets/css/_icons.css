@@ -1,0 +1,16 @@
+.social__wrap .social {
+    display: inline-block;
+    margin: 1.25rem 1.25rem 0 0;
+}
+
+.social__wrap :is(svg, ion-icon, img) {
+    width: 1.25rem;
+    min-width: auto;
+    height: 1.25rem;
+    fill: var(--color-light);
+    transition: var(--transition);
+}
+
+.social__wrap :is(svg, ion-icon):hover {
+    fill: var(--color-orange);
+}

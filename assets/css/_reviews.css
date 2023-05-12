@@ -1,0 +1,29 @@
+.review blockquote {
+    position: relative;
+    padding: 15px;
+    text-align: justify;
+}
+
+.review blockquote::before,
+.review blockquote::after {
+    position: absolute;
+    top: -7px;
+    font-size: 2rem;
+    color: var(--color-yellow);
+}
+
+.review blockquote::before {
+    content: '\0022';
+    left: 0;
+
+}
+
+.review blockquote::after {
+    content: '\0022';
+    right: 0;
+}
+
+.review blockquote cite {
+    display: block;
+    text-align: right;
+}
