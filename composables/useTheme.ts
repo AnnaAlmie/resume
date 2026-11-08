@@ -1,10 +1,12 @@
 import type { TTheme } from "@/types/main";
 
 export const useTheme = () => {
-  const theme = useState<TTheme>("theme", () => "light");
+  const theme = useState<TTheme>("theme", () => "dark");
 
   const applyTheme = () => {
     if (import.meta.client) {
+      // SET dark
+      theme.value = "dark";
       document.documentElement.setAttribute("data-theme", theme.value);
       document.documentElement.style.colorScheme = theme.value;
     }
