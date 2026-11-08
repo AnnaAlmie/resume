@@ -1,0 +1,29 @@
+@mixin mobile {
+  @media (max-width: 460px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}

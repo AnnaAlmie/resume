@@ -1,0 +1,24 @@
+@use "./_colors.scss" as *;
+@use "sass:color";
+
+:root {
+  //dark theme colors
+  color-scheme: dark;
+  --bg-page: linear-gradient(135deg, #{$light-950} 0%, #{$light-900} 100%);
+  --text: #{$light-300};
+  --text-lighter: #{$light-500};
+  --text-accent: #{$light-50};
+  --text-invert: #{$light-950};
+  --accent-1: #{$accent-10};
+  --accent-11: #{$accent-12};
+  --accent-2: #{$accent-20};
+  --accent-3: #{$accent-30};
+  // --border: #{color.change($light-100, $alpha: 0.4)};
+}
+// light theme colors
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg-page: #{$light-100};
+  --text: #{$light-900};
+  --text-lighter: #{$light-400};
+}
