@@ -46,26 +46,19 @@ const endDateFormatted = computed(() => formatDate(props.endDate || ""));
           v-if="companyLink || companyName || companyDescription"
           class="company flex-alight-center"
         >
-          <a
-            v-if="companyLink"
+          <component
+            v-if="companyLink || companyName"
+            :is="companyLink ? 'a' : 'span'"
             :href="companyLink"
             target="_blank"
             rel="noopener noreferrer"
             class="company-title"
-            @click.stop
-            @keydown.enter.stop
-            @keydown.space.stop
-            >{{ companyName }}
-            <span v-if="companyDescription" class="company-description">{{
-              companyDescription
-            }}</span>
-          </a>
-          <span v-else-if="companyName" class="company-title">
+          >
             {{ companyName }}
-            <span v-if="companyDescription" class="company-description">{{
-              companyDescription
-            }}</span>
-          </span>
+          </component>
+          <span v-if="companyDescription" class="company-description">{{
+            companyDescription
+          }}</span>
         </div>
         <div v-if="companyLocation" class="company-location">
           {{ companyLocation }}
@@ -147,7 +140,7 @@ const endDateFormatted = computed(() => formatDate(props.endDate || ""));
   &:deep() a {
     display: block;
     width: fit-content;
-    line-height: 1.15;
+    line-height: 1.75;
     text-decoration: underline;
     transition: all $transition-time ease;
     @include hover {

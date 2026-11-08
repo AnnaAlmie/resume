@@ -34,8 +34,7 @@ main {
   padding: $spacing-s;
   border-radius: $border-radius;
   @media (max-width: ($width + 32px)) {
-    margin: 0 auto;
-    border-radius: 0;
+    margin: 2px;
   }
   &.glass-effect {
     backdrop-filter: none;

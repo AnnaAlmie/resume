@@ -40,7 +40,6 @@
       </ul>
     </div>
     <div class="links">
-      <!-- TODO: hide all links -->
       <a
         href="https://app.uxreality.com/"
         target="_blank"
