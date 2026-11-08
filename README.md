@@ -72,12 +72,6 @@ yarn preview
 bun run preview
 ```
 
-## Tests
+## GitHub Pages deployment
 
-Run the application test suite with:
-
-```bash
-npm test
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Pushing to `main` builds and deploys the static site to [https://annaalmie.github.io/resume/](https://annaalmie.github.io/resume/). The GitHub repository must have Pages configured to use **GitHub Actions** as its deployment source.

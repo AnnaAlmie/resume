@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { env } from "node:process";
 import packageJson from "./package.json";
 
 export default defineNuxtConfig({
@@ -24,6 +25,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    baseURL: env.NUXT_APP_BASE_URL || "/",
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
